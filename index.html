@@ -1,94 +1,141 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WAD Week 3 - CV</title>
 
-<html>
-    <head>
-        <title>WAD - Hands-On Week 2</title>
-        <style>
-            h2, hr {
-                margin : 0;
-            }
+    <style>
+        .rectangle{
+            width: 1350px;
+            height: 50px;
+            background-color: turquoise;
+        }
 
-            tr,td {
-                font-family:monospace;
-            }
+        .content-box {
+            font-family: 'Times New Roman';
+            margin-top: 10px;
+            align-items: flex-start;
+            display: flex;
+            justify-content: space-between; 
 
-            td {
-                padding-left: 40px; font-size:18px
-            }
+        }
 
-            pre {
-                font-size : 18px
-            }
+        .content{
+            padding-left: 20px;
+            font-family: monospace;
+            font-size: 18px;
+            flex: 1;
+        }
 
-            table {
-                margin-top : 20px;
-                margin-bottom : 30px;
-            }
+        .img {
+            width: 100px;
+            height: 100px;
+            margin-left: 20px;
+        }
 
-            h3 {
-                font-family: monospace;
-                padding-left: 40px;
-                font-size: 18px;
-            }
-        </style>
-    </head>
-    <body>
+        h2 {
+            margin-bottom: 0px;
+        }
+
+        tr,td {
+            font-family:monospace;
+            font-size: 18px;
+            padding-left: 20px;
+        }
+
+        pre {
+            font-size: 18px;
+        }
+
+        .topnav {
+            background-color: turquoise;
+            overflow: hidden;
+        }
+
+        .topnav a {
+        float: left;
+        color: white;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        }
+
+        .topnav a:hover {
+        background-color: white;
+        color: black;
+        }
+
+        .topnav a.active {
+        background-color: rgb(104, 104, 226);
+        color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="topnav">
+        <a class="active" href="index.html">CV</a>
+        <a href="portofolio.html">Portofolio</a>
+
+    </div>
+
+    <div>
         <h1 align="center">CURRICULUM VITAE</h1>
-
-        <p align="center">
-            <image src="profile.jpg" width=300 height=300></image>
-        </p>
-        <br>
-        <h2>BIODATA</h2>
+        <h2>DETAIL PRIBADI</h2>
         <hr>
-        <pre>
-    Nama                : Jose Vidi Imanuel
-    Tempat/tanggal lahir: Depok, 21 April 2004
-    Agama               : Kristen
-    Jurusan             : S1 Sistem Informasi
-    Alamat              : Asrama Putra Telkom University Gedung 3, Jalan Telekomunikasi no. 1, Kec. Dayeuhkolot, Kab. Bandung, 
-                          Jawa Barat, 40257
-    No. Telp            : +62 822-6117-7300
-    Email               : josevidii@student.telkomuniversity.ac.id
-        </pre>
-        <h2>RIWAYAT PENDIDIKAN</h2>
-        <hr>
-        
-            <table>
-                <tr>
-                    <td>2010-2016</td>
-                    <td>SD Pondok Daun</td>
-                </tr>
-                <tr> 
-                    <td>2016-2019</td>
-                    <td>SMPN 3 Depok</td>
-                </tr>
-                <tr>
-                    <td>2019-2022</td>
-                    <td>SMAN 4 Depok</td>
-                </tr>
-                <tr>
-                    <td>2022-sekarang</td>  
-                    <td>Universitas Telkom</td>
-                </tr>
-            </table>
-        
+        <div class="content-box">
+          
+          <div class="content">
+            <pre>
+Nama                : Jose Vidi Imanuel
+Tempat/tanggal lahir: Depok, 21 April 2004
+Agama               : Kristen
+Jurusan             : S1 Sistem Informasi
+Alamat              : Asrama Putra Telkom University Gedung 3, Jalan Telekomunikasi no. 1, 
+                      Kec. Dayeuhkolot, Kab. Bandung, Jawa Barat, 40257
+No. Telp            : +62 822-6117-7300
+Email               : josevidii@student.telkomuniversity.ac.id
+            </pre>
+          </div>
+          <aside class="image">
+            <img src="profile.jpg" width="300" height="300" />
+          </aside>
+        </div>
+      </div>
+     
+    </div>
+    <h2>RIWAYAT PENDIDIKAN</h2>
+    <hr>
+        <table>
+            <tr>
+                <td>2010-2016</td>
+                <td>SD Pondok Daun</td>
+            </tr>
+            <tr> 
+                <td>2016-2019</td>
+                <td>SMPN 3 Depok</td>
+            </tr>
+            <tr>
+                <td>2019-2022</td>
+                <td>SMAN 4 Depok</td>
+            </tr>
+            <tr>
+                <td>2022-sekarang</td>  
+                <td>Universitas Telkom</td>
+            </tr>
+        </table>
 
+    <div>
         <h2>TENTANG SAYA</h2>
         <hr>
-        <pre>
-    Saya berasal dari Depok dan saat ini saya berusia 20 tahun. Saya memiliki cita-cita untuk menjadi seorang dosen. 
-    Maka dari itu, saya sangat senang untuk terlibat dalam kegiatan mengajar.
-        </pre>
+        <div class="content">
+            <pre>
+Saya berasal dari Depok dan saat ini saya berusia 20 tahun. Saya memiliki cita-cita untuk menjadi seorang dosen. 
+Maka dari itu, saya sangat senang untuk terlibat dalam kegiatan mengajar.
+            </pre>   
+        </div>
         
-        <br>
-
-        <h2>PORTOFOLIO</h2>
-        <hr>
-        
-        <h3>2022 - 2023</h3>
-        <ul>
-            <li><a href="portofolio.html">Tutor BIPA (Bahasa Indonesia bagi Penutur Asing)</a></li>
-        </ul>
-    </body>
+    </div>
+</body>
 </html>
